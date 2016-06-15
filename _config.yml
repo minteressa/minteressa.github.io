@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: M'interessa
+headline: > # this means to ignore newlines until "baseurl:"
+  Learning by choosing
+description: > # this means to ignore newlines until "baseurl:"
+  A Capstone Project for the Postgraduate on introduction to Data Science at the Universitat de Barcelona (Q1-Q2 2016)
+url: "https://minteressa.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: m_interessa
+github_username:  minteressa
+
+# sass:
+#   sass_dir: assets/stylesheets
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 10
+paginate_path: "blog/:num"
+
+gems: ['jekyll-paginate']
