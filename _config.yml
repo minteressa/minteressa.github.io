@@ -19,7 +19,7 @@ github_username:  minteressa
 # sass:
 #   sass_dir: assets/stylesheets
 # Build settings
-markdown: redcarpet
+# markdown: redcarpet
 highlighter: rouge
 
 paginate: 10
