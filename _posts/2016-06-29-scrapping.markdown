@@ -53,6 +53,8 @@ Metadata:
 Extract the metadata from  whe web pages is relatively easy.  The most difficult is to access to the content due the actual dynamic web pages and the responsive design. Old pages rere a simple html content wich is easy to parse. But actual webs are difficult to process "the content"
 There has been tests different packages for it **custom regexp processing** , **BeautifulSoup**, **requests** but none provide a reliable clean result. as far as there are a lot of code embedded in the text.
 
+We wanted a thumbnail of the web sites. For that we used phantomJs wich provides us to make a snapshoot of the web pages.
+
 
 
 
