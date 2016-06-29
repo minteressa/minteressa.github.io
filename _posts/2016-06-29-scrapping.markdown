@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "Scrapping the web from twitter"
-date:   2016-06-29 09:16:15 +0200
+title: Scrapping the web from twitter
+date: '2016-06-29 09:16:15 +0200'
 categories: project
+published: true
 ---
-
-### Scrapping the web from twitter
-
 ### Objectives
 The main objective is to analyze the web pages mentioned by the tweet to determine if they are interesting for the user.
 
@@ -65,13 +63,3 @@ We wanted a thumbnail of the web sites. For that we used phantomJs wich provides
 4. The information is stored in a mongodb 
 5. We make a photo of the web page
 6. We rerturn the tweet to a kafka pipe
-
-
-
-
-
-
-
-
-
-
