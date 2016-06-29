@@ -11,7 +11,7 @@ books:
     author: ""
     year: ""
     publisher: ""
-- title: "21 Recipies for Mining Twitter"
+  - title: "21 Recipies for Mining Twitter"
     author: "Russell, Matthew A."
     year: "2011"
     publisher: "O'Reilly"
