@@ -3,13 +3,14 @@ position: 5
 layout: default
 title: Bibliography
 permalink: bibliography.html
+published: true
 ---
 The following is a non-exhaustive list of the resources that have been reviewed along
 
 ## Books
 <ol>
 {% for resource in site.data.bibliography.books %}
-	<li>{{resource.title}}</li>
+	<li>{{resource.author}}. {{resource.title}}. {{resource.publisher}}, {{resource.year}}.</li>
 {% endfor %}
 </ol>
 
