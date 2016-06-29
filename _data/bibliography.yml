@@ -120,7 +120,7 @@ papers:
     journal: "Department of Statistics, Uinversity of California Berkeley"
     year: "1994"
   - title: "Deep API Learning"
-  	authors: "Gu, Xiaodong [et al.]"
+    authors: "Gu, Xiaodong [et al.]"
     journal: "arxiv.org"
     year: "2016"
   - title: "TextRank: Bringing Order Into Texts"
