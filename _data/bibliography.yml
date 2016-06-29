@@ -51,7 +51,7 @@ books:
     author: "Leskovec, Jure; Anand, Rajaraman; Ullman, Jeffrey D"
     year: "2014"
     publisher: "Stanford University"
-    - title: "Data-intensive text processing with MapReduce"
+  - title: "Data-intensive text processing with MapReduce"
     author: "Lin, Jimmy; Dyer, Chris"
     year: "2010"
     publisher: "University of Maryland, College Park"
