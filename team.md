@@ -3,12 +3,13 @@ position: 2
 layout: page
 title: Project Team
 permalink: team/
+published: true
 ---
 ## Tutor
 <div class="row">
 	<div class="col-md-4 col-md-offset-4">
 		<div class="col-xs-12 text-center">
-			<img class="img-responsive" src="{{site.data.members.lead.image }}" alt="{{site.data.members.lead.name}}"/>
+			<img class="img-responsive" src="{{site.data.members.lead.image}}" alt="{{site.data.members.lead.name}}"/>
 		</div>
 		<div class="col-xs-12 text-center">
 			{{site.data.members.lead.name}}
