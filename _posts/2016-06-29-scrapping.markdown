@@ -9,9 +9,7 @@ The main objective is to analyze the web pages mentioned by the tweet to determi
 
 Secondary objectives:
 -Identify type of pages could be more interesting
-
 -Identify type of conten could be more interesting
-
 -Have a preview of the page to easily identify it.
 
 ##Procedure
