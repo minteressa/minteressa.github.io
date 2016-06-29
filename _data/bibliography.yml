@@ -1,4 +1,8 @@
 books:
+  - title: "Learning Apache Kafka (Second Edition)"
+    author: "Garg, Nishant"
+    year: "2015"
+    publisher: "Packt Publishing"
   - title: "Docker Cookbook"
     author: "Goasguen, Sébastien"
     year: "2016"
