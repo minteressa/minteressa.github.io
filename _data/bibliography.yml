@@ -1,28 +1,29 @@
 books:
-  - title: "NLTK Essentials: build cool NLP ans machine learning applications using NLTK and other Python libraries"
-    author: "Hardeniya, Nitin"
-    year: "2015"
-    publisher: "Packt Publishing"
-    tags:
-      - tag1
-      - tag2
-  - title: "Book 2"
+  - title: ""
     author: ""
     year: ""
     publisher: ""
-    tags:
-      - tag1
-      - tag2
+  - title: "NLTK Essentials: build cool NLP and machine learning applications using NLTK and other Python libraries"
+    author: "Hardeniya, Nitin"
+    year: "2015"
+    publisher: "Packt Publishing"
+  - title: ""
+    author: ""
+    year: ""
+    publisher: ""
+- title: "21 Recipies for Mining Twitter"
+    author: "Russell, Matthew A."
+    year: "2011"
+    publisher: "O'Reilly"
+  - title: ""
+    author: ""
+    year: ""
+    publisher: ""
 blogposts:
   - title: ""
     url: ""
-    tags:
-        - tag2
-        - tag3
 papers:
-  - title: ""
-    authors: ""
-    publisher: ""
-    tags:
-        - tag2
-        - tag3
+  - title: "Globally Normalized Transition-Based Neural Networks"
+    authors: "Andor, Daniel [et al.]"
+    journal: "Google Inc."
+    year: "2016"
