@@ -15,7 +15,7 @@ Secondary objectives:
 - Identify type of conten could be more interesting
 - Have a preview of the page to easily identify it.
 
-### Procedure
+### Features
 Each tweet has 1 or n url referenced. That url takes to a web page wich have several features. From each page we have extracted the following features:
 
 
@@ -54,6 +54,18 @@ Extract the metadata from  whe web pages is relatively easy.  The most difficult
 There has been tests different packages for it **custom regexp processing** , **BeautifulSoup**, **requests** but none provide a reliable clean result. as far as there are a lot of code embedded in the text.
 
 We wanted a thumbnail of the web sites. For that we used phantomJs wich provides us to make a snapshoot of the web pages.
+
+
+
+### Procedure
+
+1. The tweets come forom a Kafka pipe. 
+2. The process looks form referenced urls
+3. The referenceds URL are scrapped as described
+4. The information is stored in a mongodb 
+5. We make a photo of the web page
+6. We rerturn the tweet to a kafka pipe
+
 
 
 
