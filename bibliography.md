@@ -18,7 +18,7 @@ The following is a non-exhaustive list of the resources that have been reviewed 
 
 <ol>
 {% for resource in site.data.bibliography.blogposts %}
-<li><a href="{{resource.url}}">{{resource.title}}</a></li>
+<li><a href="{{resource.url}}"> {{resource.title}} </a></li>
 {% endfor %}
 </ol>
 
