@@ -100,7 +100,7 @@ books:
     year: "2015"
     publisher: "Packt Publishing"
 blogposts:
-  ` title: "How useful are Topic Models in practice?"
+  - title: "How useful are Topic Models in practice?"
     url: "https://www.researchgate.net/post/How_useful_are_Topic_Models_in_practice"
   - title: "UI Bootstrap"
     url: "https://angular-ui.github.io/bootstrap/"
