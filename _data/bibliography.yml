@@ -1,4 +1,8 @@
 books:
+  - title: "Docker Cookbook"
+    author: "Goasguen, Sébastien"
+    year: "2016"
+    publisher: "O'Reilly"
   - title: "Data Science from Scratch"
     author: "Grus, Joel"
     year: "2015"
