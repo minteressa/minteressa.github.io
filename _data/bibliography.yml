@@ -1,4 +1,8 @@
 books:
+  - title: "Natural Language Processing with Python"
+    author: "Bird, Steven; Klein, Ewan; Loper, Edward"
+    year: "2009"
+    publisher: "O'Reilly"
   - title: "MongoDB Cookbook (Second Edition)"
     author: "Dasadia, Cyrus; Nayak, Amol"
     year: "2016"
