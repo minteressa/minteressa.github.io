@@ -1,4 +1,8 @@
 books:
+  - title: "MongoDB Cookbook (Second Edition)"
+    author: "Dasadia, Cyrus; Nayak, Amol"
+    year: "2016"
+    publisher: "Packt Publishing"
   - title: "Learning Apache Kafka (Second Edition)"
     author: "Garg, Nishant"
     year: "2015"
