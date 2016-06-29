@@ -4,8 +4,8 @@ title:  "Scrapping the web from twitter"
 date:   2016-06-29 09:16:15 +0200
 categories: project
 ---
-### Scrapping the web from twitter
 
+### Scrapping the web from twitter
 
 ### Objectives
 The main objective is to analyze the web pages mentioned by the tweet to determine if they are interesting for the user.
@@ -27,8 +27,37 @@ From the content:
     - Facebook
     - Reddit 
     - Meneame
-  - Internal / External
+  - Internal / Externa
+
 Metadata:
 - Whis name
 - Whois organization
 - Whois City
+- Hostname
+- Url Params
+- Content Type
+- Description
+- Content language
+- Abstract
+- Topic
+- Subject
+- Generator
+- copyright
+- Title
+- Author
+- Schema Present?
+
+
+### troubleshooting
+
+Extract the metadata from  whe web pages is relatively easy.  The most difficult is to access to the content due the actual dynamic web pages and the responsive design. Old pages rere a simple html content wich is easy to parse. But actual webs are difficult to process "the content"
+There has been tests different packages for it **custom regexp processing** , **BeautifulSoup**, **requests** but none provide a reliable clean result. as far as there are a lot of code embedded in the text.
+
+
+
+
+
+
+
+
+
