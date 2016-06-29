@@ -101,13 +101,13 @@ books:
     publisher: "Packt Publishing"
 blogposts:
   - title: "ExifTool by Phil Harvey"
-  	url: "http://www.sno.phy.queensu.ca/~phil/exiftool/"
+    url: "http://www.sno.phy.queensu.ca/~phil/exiftool/"
   - title: "Google advanced search: A comprehensive list of Google search operators"
-   	url: "https://bynd.com/news-ideas/google-advanced-search-comprehensive-list-google-search-operators/"
+    url: "https://bynd.com/news-ideas/google-advanced-search-comprehensive-list-google-search-operators/"
   - title: "How useful are Topic Models in practice?"
     url: "https://www.researchgate.net/post/How_useful_are_Topic_Models_in_practice"
   - title: "Introducing our Hybrid lda2vec Algorithm"
-  	url: "http://multithreaded.stitchfix.com/blog/2016/05/27/lda2vec/#topic=38&lambda=1&term="
+    url: "http://multithreaded.stitchfix.com/blog/2016/05/27/lda2vec/#topic=38&lambda=1&term="
   - title: "UI Bootstrap"
     url: "https://angular-ui.github.io/bootstrap/"
 papers:
@@ -138,4 +138,4 @@ papers:
   - title: "Groundhog Day: Near-Duplicate Detection on Twitter"
     authors: "Tao, Ke [et al.]"
     journal: "Proceedings of the 22nd international conference on World Wide Web"
-    year: "2013" 
+    year: "2013"
