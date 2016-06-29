@@ -1,6 +1,6 @@
 books:
   - title: "NLTK Essentials: build cool NLP ans machine learning applications using NLTK and other Python libraries"
-    author: "Nitin Hardeniya"
+  - author: "Nitin Hardeniya"
     year: "2015"
     publisher: "Packt Publishing"
     tags:
