@@ -100,8 +100,8 @@ books:
     year: "2015"
     publisher: "Packt Publishing"
 blogposts:
-  - title: ""
-    url: ""
+  - title: "UI Bootstrap"
+    url: "https://angular-ui.github.io/bootstrap/"
 papers:
   - title: "Globally Normalized Transition-Based Neural Networks"
     authors: "Andor, Daniel [et al.]"
