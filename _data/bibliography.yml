@@ -132,7 +132,7 @@ blogposts:
     url: "https://github.com/dibbhatt/kafka-spark-consumer"
   - title: "How useful are Topic Models in practice?"
     url: "https://www.researchgate.net/post/How_useful_are_Topic_Models_in_practice"
-  - title: "Implementation of Q.V. Le, and T. Mikolov, *Distributed Representations of Sentences and Documents ICML*, 2014"
+  - title: "Implementation of Q.V. Le, and T. Mikolov, Distributed Representations of Sentences and Documents ICML, 2014"
     url: "https://github.com/JonathanRaiman/PVDM"
   - title: "Indexing Tweets with NiFi and Solr"
     url: "https://blogs.apache.org/nifi/entry/indexing_tweets_with_nifi_and"
