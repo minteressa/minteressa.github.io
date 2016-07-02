@@ -18,6 +18,7 @@ Each tweet has 1 or n url referenced. That url takes to a web page wich have sev
 
 
 From the content:
+
 - All the images and their attributes
 - All the links and their attributies. Also categorized by:
   - Social networks:
@@ -28,6 +29,7 @@ From the content:
   - Internal / Externa
 
 Metadata:
+
 - Whis name
 - Whois organization
 - Whois City
@@ -44,6 +46,7 @@ Metadata:
 - Title
 - Author
 - Schema Present?
+
 
 
 ### troubleshooting
