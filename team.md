@@ -25,6 +25,7 @@ published: true
 		</div>
 	</div>
 </div>
+
 ## Team members
 <div class="row">
 	{% for member in site.data.members.team %}
