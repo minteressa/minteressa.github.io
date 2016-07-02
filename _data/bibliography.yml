@@ -96,7 +96,7 @@ books:
     year: "2011"
     publisher: "O'Reilly"
   - title: "Active Learning Literature Survey"
-  	author: "Settles, Burr"
+    author: "Settles, Burr"
     year: "2010"
     publisher: "University of Wisconsin-Madison"
   - title: "Sparck Cookbook"
