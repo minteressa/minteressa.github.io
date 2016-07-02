@@ -27,6 +27,6 @@ The following is a non-exhaustive list of the resources that have been reviewed 
 
 <ol>
 {% for resource in site.data.bibliography.papers %}
-	<li>{{resource.authors}}. {{resource.title}}. {{resource.journal}}, {{resource.year}}.</li>
+<li>{{resource.authors}}. <i>{{resource.title}}</i>. {{resource.journal}}, {{resource.year}}.</li>
 {% endfor %}
 </ol>
