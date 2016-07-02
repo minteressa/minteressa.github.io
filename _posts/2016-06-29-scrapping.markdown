@@ -30,7 +30,7 @@ From the content:
     * Reddit 
     * Meneame
     
-  * Internal / Externa
+  * Internal / External
 
 Metadata:
 
