@@ -11,7 +11,7 @@ The following is a non-exhaustive list of the resources that have been reviewed 
 
 <ol>
 {% for resource in site.data.bibliography.books %}
-	<li>{{resource.author}}. {{resource.title}}. {{resource.publisher}}, {{resource.year}}.</li>
+	<li>{{resource.author}}. <i>{{resource.title}}</i>. {{resource.publisher}}, {{resource.year}}.</li>
 {% endfor %}
 </ol>
 
