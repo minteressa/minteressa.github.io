@@ -25,8 +25,8 @@ team:
     twitter: "https://twitter.com/marioalberich"
     github: "https://github.com/malberich/"
 lead:
-  name: "Eloi Puertas"
-  photo: "https://github.com/minteressa/minteressa.github.io/blob/master/assets/images/eloi.jpg"
-  linkedin: "https://es.linkedin.com/in/eloi-puertas-prats-2b737971"
-  twitter: "https://twitter.com/eloipuertas"
-  github: "https://github.com/eloipuertas"
+  - name: "Eloi Puertas"
+    photo: "https://github.com/minteressa/minteressa.github.io/blob/master/assets/images/eloi.jpg"
+    linkedin: "https://es.linkedin.com/in/eloi-puertas-prats-2b737971"
+    twitter: "https://twitter.com/eloipuertas"
+    github: "https://github.com/eloipuertas"
