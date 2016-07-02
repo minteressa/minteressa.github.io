@@ -9,7 +9,7 @@ permalink: about.html
 
 ### Avoid the noise...
 
-Each second, Twitter publishes around 7k tweets [(Link to come)](#). It's not possible for a single person to follow all this amount of conversation, and even a 100-fold amount of tweets would require full atention along all the day, leaving no time for processing all the information received.
+Each second, Twitter publishes around [7k tweets](http://www.internetlivestats.com/twitter-statistics/). It's not possible for a single person to follow all this amount of conversation, and even a 100-fold amount of tweets would require full atention along all the day, leaving no time for processing all the information received.
 
 Moreover, those tweets may include a lot of noise for any individual, no matter whether this noise is caused by fake information, spam, automated bots or a combination of them. But it can also be possible that the published tweet, even if it's reasonably trustable, may not be relevant for our informational needs.
 
