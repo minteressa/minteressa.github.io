@@ -1,3 +1,9 @@
+lead:
+  - name: "Eloi Puertas"
+    photo: "https://raw.githubusercontent.com/minteressa/minteressa.github.io/master/assets/images/eloi.jpg"
+    linkedin: "https://es.linkedin.com/in/eloi-puertas-prats-2b737971"
+    twitter: "https://twitter.com/eloipuertas"
+    github: "https://github.com/eloipuertas"
 team:
   - name: "Lola Vicente"
     photo: "https://raw.githubusercontent.com/minteressa/minteressa.github.io/master/assets/images/lola.jpg"
@@ -24,9 +30,3 @@ team:
     linkedin: "https://es.linkedin.com/in/marioalberich"
     twitter: "https://twitter.com/marioalberich"
     github: "https://github.com/malberich/"
-lead:
-  - name: "Eloi Puertas"
-    photo: "https://raw.githubusercontent.com/minteressa/minteressa.github.io/master/assets/images/eloi.jpg"
-    linkedin: "https://es.linkedin.com/in/eloi-puertas-prats-2b737971"
-    twitter: "https://twitter.com/eloipuertas"
-    github: "https://github.com/eloipuertas"
