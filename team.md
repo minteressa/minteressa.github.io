@@ -9,7 +9,7 @@ published: true
 <div class="row">
 	<div class="col-md-4 col-md-offset-4">
 		<div class="col-xs-12 text-center">
-			<img class="img-responsive" src="{{site.data.members.lead.photo}}" alt="{{site.data.members.lead.name}}"/>
+			<img class="img-responsive" src="{{site.data.members.lead.photo}}" alt="{{site.data.members.lead.name}}" height="200" width="200"/>
 		</div>
 		<div class="col-xs-12 text-center">
 			{{site.data.members.lead.name}}
