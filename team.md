@@ -9,7 +9,7 @@ published: true
 <div class="row">
 	<div class="col-md-4 col-md-offset-4">
 		<div class="col-xs-12 text-center">
-			<img class="img-responsive" src="{{site.data.members.lead.image}}" alt="{{site.data.members.lead.name}}"/>
+			<img class="img-responsive" src="{{site.data.members.lead.photo}}" alt="{{site.data.members.lead.name}}"/>
 		</div>
 		<div class="col-xs-12 text-center">
 			{{site.data.members.lead.name}}
@@ -32,7 +32,7 @@ published: true
 		<div class="col-md-4 col-sm-6 col-xs-12" style="margin-top: 3em">
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<img class="img-responsive" src="{{member.image}}" alt="{{member.name}}"/>
+					<img class="img-responsive" src="{{member.photo}}" alt="{{member.name}}"/>
 				</div>
 				<div class="col-xs-12 text-center">
 					{{member.name}}
