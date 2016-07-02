@@ -114,6 +114,8 @@ blogposts:
     url: "https://github.com/juliangruber/url-to-screenshot"
   - title: "Code examples that show to integrate Apache Kafka 0.8+ with Apache Storm 0.9+ and Apache Spark Streaming 1.1+, while using Apache Avro as the data serialization format"
     url: "https://github.com/miguno/kafka-storm-starter/"
+  - title: "dc.js - Dimensional Charting Javascript Library"
+    url: "https://dc-js.github.io/dc.js/"
   - title: "Dealing with Unbalanced Classes ,Svm, Random Forests And Decision Trees In Python"
     url: "http://bigdataexaminer.com/data-science/dealing-with-unbalanced-classes-svm-random-forests-and-decision-trees-in-python/"
   - title: "Distributed representations of sentences and documents"
