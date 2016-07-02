@@ -16,7 +16,6 @@ layout: default
   <div class="row">
     {% for post in site.posts %}
       <div class="col-md-3 col-sm-4 col-xs-6">
-        <img class="img-responsive" src="{{ post.thubmnail }}" alt="{{ post.title }}"/>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
