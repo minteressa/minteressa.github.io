@@ -30,9 +30,9 @@ From the content:
 
 Metadata:
 
-- Whis name
-- Whois organization
-- Whois City
+* Whis name
+* Whois organization
+* Whois City
 - Hostname
 - Url Params
 - Content Type
