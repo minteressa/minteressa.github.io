@@ -15,13 +15,13 @@ published: true
 			{{site.data.members.lead.name}}
 		</div>
 		<div class="col-xs-2 col-xs-offset-3">
-			<a href="{{site.data.members.twitter || '#'}}" target="_new"><i class="fa fa-twitter"></i></a>
+			<a href="{{site.data.members.lead.twitter || '#'}}" target="_new"><i class="fa fa-twitter"></i></a>
 		</div>
 		<div class="col-xs-2">
-			<a href="{{site.data.members.github || '#'}}" target="_new"><i class="fa fa-github"></i></a>
+			<a href="{{site.data.members.lead.github || '#'}}" target="_new"><i class="fa fa-github"></i></a>
 		</div>
 		<div class="col-xs-2">
-			<a href="{{site.data.members.linkedin || '#'}}" target="_new"><i class="fa fa-linkedin"></i></a>
+			<a href="{{site.data.members.lead.linkedin || '#'}}" target="_new"><i class="fa fa-linkedin"></i></a>
 		</div>
 	</div>
 </div>
