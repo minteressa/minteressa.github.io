@@ -116,6 +116,8 @@ blogposts:
     url: "https://www.researchgate.net/post/How_useful_are_Topic_Models_in_practice"
   - title: "lda: Topic modeling with latent Dirichlet Allocation"
     url: "http://pythonhosted.org/lda/"
+  - title: "Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Flink and DataFlow"
+    url: "https://github.com/dmlc/xgboost"
   - title: "Topic modeling with LDA: MLlib meets GraphX"
     url: "https://databricks.com/blog/2015/03/25/topic-modeling-with-lda-mllib-meets-graphx.html"
   - title: "Introducing our Hybrid lda2vec Algorithm"
