@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Introducing the project"
+post_author: Mario Alberich
 date:   2016-06-01 09:16:15 +0200
 categories: project
 ---

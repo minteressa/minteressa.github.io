@@ -2,6 +2,7 @@
 layout: post
 title: Scrapping the web from twitter
 date: '2016-06-29 09:16:15 +0200'
+post_author: Juanjo Ortilles
 categories: project
 published: true
 ---
@@ -24,12 +25,12 @@ From the content:
 * All the links and their attributies. Also categorized by:
 
   * Social networks:
-  
+
     * Twitter
     * Facebook
-    * Reddit 
+    * Reddit
     * Meneame
-    
+
   * Internal / External
 
 Metadata:
@@ -64,9 +65,9 @@ We wanted a thumbnail of the web sites. For that we used phantomJs wich provides
 
 ### Procedure
 
-1. The tweets come forom a Kafka pipe. 
+1. The tweets come forom a Kafka pipe.
 2. The process looks form referenced urls
 3. The referenceds URL are scrapped as described
-4. The information is stored in a mongodb 
+4. The information is stored in a mongodb
 5. We make a photo of the web page
 6. We rerturn the tweet to a kafka pipe
