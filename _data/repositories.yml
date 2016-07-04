@@ -1,8 +1,12 @@
 repository:
   - title: "Project website"
     url: "https://github.com/minteressa/minteressa.github.io"
+  - title: "Web backend and frontend"
+    url: "https://github.com/malberich/pgds-minteressa-webapp"
+  - title: "Kafka backend"
+    url: "https://github.com/rberenguel/pgds-kafka-backend"
   - title: ""
-    url: ""
+    url: "https://github.com/malberich/pgds-etl-filters"
   - title: ""
     url: ""
   - title: ""
