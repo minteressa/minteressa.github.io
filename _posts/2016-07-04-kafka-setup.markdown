@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Kafkian: or how we deploy and set-up our Kafka broker"
+title: 'Kafkian: or how we deploy and set-up our Kafka broker'
 thumbnail: /assets/images/kafka-logo.png
-date:   2016-07-04 15:00:00 +0200
+date: '2016-07-04 15:00:00 +0200'
 post_author: Ruben Berenguel
 categories: infrastructure
+published: true
 ---
 
 ## What is Apache Kafka?
-
 **Apache Kafka** is an industry standard solution for creating real-time data pipelines involving several subsystems. It is a queing system based on a publish-subscribe (*PubSub*) model, where *producers* publish messages to a topic (or several topics) and *consumers* subscribe to topics. Each topic is similar to a queue, hence consumers remove messages from the queue. It comes with built-in replication, and offers high scalability. As such, in general we talk about interacting with a Kafka *cluster*.
 
 A Kafka cluster has one or several *Kafka brokers* -- or in other words, Kafka instances -- and at least one instance of Apache Zookeeper. Zookeeper keeps track of how many messages have been consumed from each topic as well as electing a *leader* among the Kafka brokers. The leader broker, as we can expect, is the primary reference in case one of the other brokers fail, and is used as ground truth when there are conflicts.
@@ -34,4 +34,3 @@ With this goal in mind, we set a docker image with the correct version of Scala 
 Long story short, first Scala could not correctly process the alias used by the link in compose -- had to upgrade to a compose 2.0 file to make sure DNS setup in Docker was working correctly -- then the advertised host name (which was the alias `kafka`) did not match anything in the 'external' machine -- this was fixed just by modifying `/etc/hosts`. 
 
 In retrospect it seems easy, but during the process we learnt about how [docker manages its networks](https://docs.docker.com/v1.11/engine/userguide/networking/dockernetworks/), [how links work](https://docs.docker.com/v1.11/compose/link-env-deprecated/) and how the [ambassador pattern](https://docs.docker.com/engine/admin/ambassador_pattern_linking/) could be used in these cases.
-
