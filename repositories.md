@@ -3,28 +3,13 @@ position: 5
 layout: default
 title: Repositories
 permalink: repositories.html
+published: true
 ---
-The following is a non-exhaustive list of the resources that have been reviewed along
+The following is all GitHub repositories used in this project
 
-## Books
-<ol>
-{% for resource in site.data.bibliography.books %}
-	<li>{{resource.title}}</li>
-{% endfor %}
-</ol>
-
-## Online articles and resources
-
+## GitHub rerositories
 <ol>
 {% for resource in site.data.bibliography.blogposts %}
-	<li>{{resource.title}}</li>
-{% endfor %}
-</ol>
-
-## Scholar articles
-
-<ol>
-{% for resource in site.data.bibliography.papers %}
-	<li>{{resource.title}}</li>
+<li>{{resource.title}} <a href="{{resource.url}}"> {{resource.url}} </a></li>
 {% endfor %}
 </ol>
