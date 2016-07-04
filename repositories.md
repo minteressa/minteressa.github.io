@@ -5,7 +5,7 @@ title: Repositories
 permalink: repositories.html
 published: true
 ---
-The following is all GitHub repositories used in this project
+The following is a list of all GitHub repositories used in this project
 
 ## GitHub repositories
 <ol>
