@@ -10,7 +10,7 @@ published: true
 	{% for member in site.data.members.lead %}
     	<div class="col-md-4 col-md-offset-4">
 			<div class="col-xs-12 text-center">
-				<img class="img-responsive" src="{{member.photo}}" alt="{{member.name}}" height="200" width="200" align="middle"/>
+				<img class="img-responsive" src="{{member.photo}}" alt="{{member.name}}" height="200" width="200" align="right"/>
 			</div>
 			<div class="col-xs-12 text-center">
 				{{member.name}}
