@@ -202,6 +202,8 @@ blogposts:
     url: "https://pierrevillard.com/2016/04/29/us-presidential-election-via-twitter-using-apache-nifi-spark-hive-and-zeppelin/"
   - title: "Versatile Spark – Streaming"
     url: "https://www.opendatascience.com/blog/versatile-spark-streaming/"
+  - title: "Word2vec Tutorial"
+    url: "http://rare-technologies.com/word2vec-tutorial/"
   - title: "XGBoost4J: Portable Distributed XGBoost in Spark, Flink and Dataflow"
     url: "http://dmlc.ml/2016/03/14/xgboost4j-portable-distributed-xgboost-in-spark-flink-and-dataflow.html"
   - title: "Zookeeper & Kafka Install : A single node and a multiple broker cluster - 2016"
