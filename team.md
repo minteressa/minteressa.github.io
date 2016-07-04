@@ -10,7 +10,7 @@ published: true
 	{% for member in site.data.members.lead %}
     	<div class="col-md-4 col-md-offset-4">
 			<div class="col-xs-12 text-center">
-				<img class="img-responsive" src="{{member.photo}}" alt="{{member.name}}" height="200" width="200" align="middle"/>
+				<img class="img-responsive" src="{{member.photo}}" alt="{{member.name}}" height="200" width="200"/>
 			</div>
 			<div class="col-xs-12 text-center">
 				{{member.name}}
@@ -34,7 +34,7 @@ published: true
 		<div class="col-md-4 col-sm-6 col-xs-12" style="margin-top: 3em">
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<img class="img-responsive" src="{{member.photo}}" alt="{{member.name}}" height="200" width="200" align="middle"/>
+					<img class="img-responsive" src="{{member.photo}}" alt="{{member.name}}" height="200" width="200"/>
 				</div>
 				<div class="col-xs-12 text-center">
 					{{member.name}}
