@@ -5,6 +5,8 @@ repository:
     url: "https://github.com/malberich/pgds-minteressa-webapp"
   - title: "Kafka backend"
     url: "https://github.com/rberenguel/pgds-kafka-backend"
+  - title: "Kafka Docker"
+    url: "https://github.com/rberenguel/kafka-docker"
   - title: "Feature extraction"
     url: "https://github.com/mdvicente/DS-BD"
   - title: "Extract, transform, load and filter"
