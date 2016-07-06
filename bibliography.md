@@ -23,7 +23,7 @@ The following is a non-exhaustive list of the resources that have been reviewed 
 {% endfor %}
 </ol>
 
-## Scholar articles
+## Scholarly articles
 
 <ol>
 {% for resource in site.data.bibliography.papers %}
