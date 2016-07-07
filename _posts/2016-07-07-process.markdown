@@ -12,6 +12,9 @@ The process that the data follows is the one showed in the next diagram:
 
 
 1. The tweets collected are filtered excluding the ones that don't include an URL.
-2. The tweets that include an URL are filtered by language: Spanish and English.
-3. Each group tweets are filtered aganin in order to excude their duplicates and near duplicates.
-4. 
+2. The tweets that include an URL are filtered by language and then separated in two groups: tweets in Spanish and tweets in English.
+3. Each group are filtered again in order to excude their duplicates and near duplicates.
+4. Feature extraction:
+..a. From the tweets.
+..b. From their URLs using web scrapping.
+5. 
