@@ -11,6 +11,8 @@ Lorem ipsum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec orci fringilla nisi elementum gravida. Nulla fringilla erat eget lorem venenatis gravida. Nulla facilisi. Etiam vel consequat eros.<!–break–> Ut luctus turpis id tempor porta. Mauris a turpis rhoncus, lobortis odio at, convallis quam. Integer rhoncus diam et erat consequat semper. Pellentesque imperdiet fringilla mauris id posuere. Quisque tincidunt sollicitudin erat at tempus. Praesent scelerisque, turpis ut cursus dictum, elit mauris tempor sapien, id ultrices justo est vitae nibh. Phasellus pellentesque fringilla lacinia. Nullam luctus, mi quis accumsan lacinia, ex neque convallis velit, nec sodales ipsum lorem ac turpis. Sed tincidunt tristique felis sed commodo. Ut sapien quam, accumsan sit amet nisi ut, efficitur aliquet nulla.
 
+![Process diagram]({{site.baseurl}}/https://raw.githubusercontent.com/minteressa/minteressa.github.io/95fdbbbae90980db38bf2934157c29f7c81cacc2/assets/images/process.png)
+
 ### Integer eget arcu dolor
 
 Integer eget arcu dolor. Nullam eu erat in nibh commodo pretium at eu lectus. Phasellus porta elit a tellus consectetur aliquam. Nulla fermentum lobortis lacus at luctus. Phasellus ante est, congue vitae egestas ut, facilisis id dui. Sed nec ullamcorper nisi. Etiam mattis varius lectus eget cursus. Vestibulum cursus tincidunt augue id porttitor. Duis dignissim pulvinar congue.
