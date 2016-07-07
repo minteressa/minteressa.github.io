@@ -142,6 +142,8 @@ blogposts:
     url: "https://github.com/dibbhatt/kafka-spark-consumer"
   - title: "How useful are Topic Models in practice?"
     url: "https://www.researchgate.net/post/How_useful_are_Topic_Models_in_practice"
+  - title: "HubInfo | A GitHub Repo Widget"
+    url: "http://firstandthird.github.io/hubinfo/"
   - title: "Implementation of Q.V. Le, and T. Mikolov, Distributed Representations of Sentences and Documents ICML, 2014"
     url: "https://github.com/JonathanRaiman/PVDM"
   - title: "Indexing Tweets with NiFi and Solr"
