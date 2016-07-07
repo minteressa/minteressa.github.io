@@ -13,3 +13,9 @@ The following is a list of all GitHub repositories used in this project
 <li>{{resource.title}} <a href="{{resource.url}}">{{resource.url}}</a></li>
 {% endfor %}
 </ol>
+
+<ol>
+{% for resource in site.data.repositories.repository %}
+<li>{{resource.title}} <a href="{{resource.url}}">{{resource.url}}</a></li>
+{% endfor %}
+</ol>
