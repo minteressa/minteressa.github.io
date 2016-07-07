@@ -9,7 +9,7 @@ published: true
 ---
 
 ## What is Apache Kafka?
-**Apache Kafka** is an industry standard solution for creating real-time data pipelines involving several subsystems. It is a queing system based on a publish-subscribe (*PubSub*) model, where *producers* publish messages to a topic (or several topics) and *consumers* subscribe to topics.<!–break–> Each topic is similar to a queue, hence consumers remove messages from the queue. It comes with built-in replication, and offers high scalability. As such, in general we talk about interacting with a Kafka *cluster*.
+**Apache Kafka** is an industry standard solution for creating real-time data pipelines involving several subsystems. It is a queing system based on a publish-subscribe (*PubSub*) model, where *producers* publish messages to a topic (or several topics) and *consumers* subscribe to topics. Each topic is similar to a queue, hence consumers remove messages from the queue. It comes with built-in replication, and offers high scalability. As such, in general we talk about interacting with a Kafka *cluster*.
 
 A Kafka cluster has one or several *Kafka brokers* -- or in other words, Kafka instances -- and at least one instance of Apache Zookeeper. Zookeeper keeps track of how many messages have been consumed from each topic as well as electing a *leader* among the Kafka brokers. The leader broker, as we can expect, is the primary reference in case one of the other brokers fail, and is used as ground truth when there are conflicts.
 
