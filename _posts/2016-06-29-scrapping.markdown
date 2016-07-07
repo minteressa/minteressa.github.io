@@ -7,7 +7,7 @@ categories: project
 published: true
 ---
 ### Objectives
-The main objective is to analyze the web pages mentioned by the tweet to determine if they are interesting for the user.<!–break–>
+The main objective is to analyze the web pages mentioned by the tweet to determine if they are interesting for the user.
 
 Secondary objectives:
 
