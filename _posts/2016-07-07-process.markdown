@@ -7,7 +7,9 @@ published: true
 ---
 The process that the data follows is the one showed in the next diagram:
 
+
 <img class="img-responsive pull-right" width="80%" src="/assets/images/process.png" alt="{{ post.title }}"/>
+
 
 1. The tweets collected are filtered excluding the ones that don't include an URL.
 2. The tweets that include an URL are filtered by language: Spanish and English.
