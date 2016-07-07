@@ -17,4 +17,5 @@ The process that the data follows is the one showed in the next diagram:
 4. Feature extraction, saving the into a JSON file:
 	* From the tweets.
 	* From their URLs using web scrapping.
-5. The features are processed by the training model.
+5. Vectorization of the extracted features.
+6. The features are processed by the training model.
