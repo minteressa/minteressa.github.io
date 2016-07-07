@@ -16,6 +16,7 @@ The following is a list of all GitHub repositories used in this project
 
 <ol>
 {% for resource in site.data.repositories.repository %}
-<div id="{resource.user}_{resource.title}"></div>
+<li><div id="{resource.user}_{resource.title}"></div></li>
 {% endfor %}
 </ol>
+<script>
