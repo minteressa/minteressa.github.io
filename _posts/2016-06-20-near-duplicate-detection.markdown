@@ -7,7 +7,7 @@ post_author: Mario Alberich
 categories: modelling
 published: true
 ---
-Twitter is full of duplicated or near-duplicated content (ND for short from now onwards).  Flooding a user's candidate tweet list with a bunch of items that have (almost) the same content can only lead to a bad user experience.<!–break–>
+Twitter is full of duplicated or near-duplicated content (ND for short from now onwards).  Flooding a user's candidate tweet list with a bunch of items that have (almost) the same content can only lead to a bad user experience.
 
 ## So what's a near-duplicate
 For sure you can imagine two text fragments that can be considered a duplicate one of another, by comparing its content and checking whether it's exactly the same.  There are some minor details that are trivial for a human but very important for a machine, for instance case sensitiviy (are uppercase and lowercase considered the same?), character sets depending on the language, or punctuation among others. In this situation, a duplicate text as we're considering it right now, is a text with the same content and structure, whichever the semantic meaning that involves.
