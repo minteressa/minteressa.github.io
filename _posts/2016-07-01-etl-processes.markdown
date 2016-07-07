@@ -7,7 +7,7 @@ categories: project
 published: true
 ---
 ## Objective
-The main objective is to fetch the data from Kafka and perform some (more or less sophisticaded) filters over the gathered tweets in order to:<!–break–>
+The main objective is to fetch the data from Kafka and perform some (more or less sophisticaded) filters over the gathered tweets in order to:
 
 * Remove tweets from non-supported languages
 * Remove tweets that don't include at least one URL.
