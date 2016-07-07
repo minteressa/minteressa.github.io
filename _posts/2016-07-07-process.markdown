@@ -5,10 +5,11 @@ date: '2016-07-07 21:16:15 +0200'
 categories: project
 published: true
 ---
-The process that the data follows is the one shown in the next diagram:
+<img class="img-responsive pull-right" width="80%" src="/assets/images/process.png" alt="{{ post.title }}"/>
 
+The process that the data follows is the one shown in the diagram above:
 
-<img class="img-responsive pull-right" width="80%" src="/assets/images/process.png" alt="{{ post.title }}"/>1. The tweets are collected and added to a Kafka queue.
+1. The tweets are collected and added to a Kafka queue.
 2. The queued tweets are filtered excluding the ones that don't include an URL.
 3. The tweets that include an URL are filtered by language and then separated in two groups: tweets in Spanish and tweets in English.
 4. Each group are filtered again in order to excude their duplicates and near duplicates.
