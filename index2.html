@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>dc.js - m'interessa</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://dc-js.github.io/dc.js/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://dc-js.github.io/dc.js/css/dc.css"/>
+  </head>
+  <body>
+
+<div class="container">
+<!--script type="text/javascript" src="http://dc-js.github.io/dc.js/examples/header.js"></script-->
+<div class="row">
+	<div id="chart-ring-lossfunc"></div>
+	<div id="chart-ring-kernel"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-4">
+		<h3>Precision</h3>
+		<div id="chart-PRE"></div>
+	</div>
+	<div class="col-xs-4">
+		<h3>Recall</h3>
+		<div id="chart-REC"></div>
+	</div>
+	<div class="col-xs-4">
+		<h3>Accuracy</h3>
+		<div id="chart-ACC"></div>
+	</div>
+</div>
+	
+    <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/d3.js"></script>
+    <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+    <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/dc.js"></script>
+    <script type="text/javascript">
+
+	
+var lossfuncRingChart   = dc.pieChart("#chart-ring-lossfunc"),
+	kernekRingChart   = dc.pieChart("#chart-ring-kernel"),
+    PRERowChart = dc.lineChart("#chart-PRE"),
+	RECRowChart = dc.lineChart("#chart-REC"),
+	ACCRowChart = dc.lineChart("#chart-ACC")
+	PRECols = 100,
+	ACCCols = 100,
+	RECCols = 100;
+	
+
+d3.csv("gridsearch-nourls-isis.csv", function(error, experiments) {
+  experiments.forEach(function(x) {
+    x.PRE = Math.floor( parseFloat( x.PRE ) * PRECols );
+	x.ACC = Math.floor( parseFloat( x.ACC ) * ACCCols );
+	x.REC = Math.floor( parseFloat( x.REC ) * RECCols );
+  });
+  // lossDimension = return map[d.lossfunc]
+  
+  // set crossfilter with first dataset
+	var ndx = crossfilter(experiments),
+	
+	
+    lossfuncDim  = ndx.dimension(function(d) {return d.lossfunc;}),
+    kernelDim  = ndx.dimension(function(d) {return d.kernel;}),
+	PREDim = ndx.dimension(function(d) {return d.PRE;}),
+	ACCDim = ndx.dimension(function(d) {return d.ACC;}),
+	RECDim = ndx.dimension(function(d) {return d.REC;}),
+	countPerLoss = lossfuncDim.group().reduceCount(),
+	countPerKernel   = kernelDim.group().reduceCount();
+    //spendPerName = kernelDim.group().reduceSum(function(d) {return +d.PRE;}),
+    countPerPRE    = PREDim.group().reduceCount(),
+	countPerREC    = RECDim.group().reduceCount(),
+	countPerACC    = PREDim.group().reduceCount();
+	
+	
+  
+function render_plots(){
+    lossfuncRingChart
+        .width(200).height(200)
+        .dimension(lossfuncDim)
+        .group(countPerLoss)
+        .innerRadius(50)
+		
+		;
+	
+
+	kernekRingChart	
+        .width(200).height(200)
+        .dimension(kernelDim)
+        .group(countPerKernel)
+        .innerRadius(50)
+		
+		;	
+
+	
+    PRERowChart
+        .width(250)
+		.height(200)
+		.renderArea(true)
+        .dimension(RECDim)
+		.x(d3.scale.linear().domain([0, PRECols]))
+        .group(countPerREC)
+		.renderTitle(true)
+		.title( "Precision");
+
+    RECRowChart
+        .width(250)
+		.height(200)
+		.renderArea(true)
+        .dimension(PREDim)
+		.x(d3.scale.linear().domain([0, PRECols]))
+        .group(countPerPRE)
+		.title("Recall");
+		
+		
+		
+		
+    ACCRowChart
+        .width(250)
+		.height(200)
+		.renderArea(true)
+        .dimension(ACCDim)
+		.x(d3.scale.linear().domain([0, ACCCols]))
+        .group(countPerACC)
+		.title("Accuracy");
+		
+		
+    dc.renderAll();
+}
+render_plots();
+
+
+
+});
+
+
+
+
+
+    </script>
+
+</div>
+  </body>
+</html>
