@@ -13,6 +13,11 @@
 <div class="row">
 	<div id="chart-ring-lossfunc"></div>
 	<div id="chart-ring-kernel"></div>
+  	<div id="chart-ring-decay"></div>
+  	<div id="chart-ring-ngram"></div>
+  	<div id="chart-ring-skip"></div>
+  	<div id="chart-ring-learning_rate"></div>
+  	<div id="chart-ring-pred_thresh"></div>
 </div>
 
 <div class="row">
@@ -36,8 +41,13 @@
     <script type="text/javascript">
 
 	
-var lossfuncRingChart   = dc.pieChart("#chart-ring-lossfunc"),
-	kernekRingChart   = dc.pieChart("#chart-ring-kernel"),
+var lossfuncRingChart = dc.pieChart("#chart-ring-lossfunc"),
+	kernelRingChart = dc.pieChart("#chart-ring-kernel"),
+    decayRingChart = dc.pieChart("#chart-ring-decay"),
+    ngramRingChart = dc.pieChart("#chart-ring-ngram"),
+    skipRingChart = dc.pieChart("#chart-ring-skip"),
+    learning_rateRingChart = dc.pieChart("#chart-ring-learning_rate"),
+    pred_threshRingChart = dc.pieChart("#chart-ring-pred_thresh"),
     PRERowChart = dc.lineChart("#chart-PRE"),
 	RECRowChart = dc.lineChart("#chart-REC"),
 	ACCRowChart = dc.lineChart("#chart-ACC")
@@ -67,17 +77,18 @@ d3.csv("gridsearch-nourls-isis.csv", function(error, experiments) {
     pred_threshDim  = ndx.dimension(function(d) {return d.pred_thresh;}),
     PREDim = ndx.dimension(function(d) {return d.PRE;}),
 	ACCDim = ndx.dimension(function(d) {return d.ACC;}),
-	RECDim = ndx.dimension(function(d) {return d.REC;}),
+	RECDim = ndx.dimension(function(d) {return d.REC;});
 
 	countPerLoss = lossfuncDim.group().reduceCount(),
-	countPerKernel   = kernelDim.group().reduceCount();
-    countPerPRE    = PREDim.group().reduceCount(),
-	countPerREC    = RECDim.group().reduceCount(),
-	countPerACC    = PREDim.group().reduceCount();
-  decay	ngram	skip	learning_rate	pred_thresh
-
-	
-	
+	countPerKernel = kernelDim.group().reduceCount(),
+    countPerDecay = decayDim.group().reduceCount(),
+    countPerNgram = ngramDim.group().reduceCount(),
+    countPerSkip = skipDim.group().reduceCount(),
+    countPerLearning_rate = learning_rateDim.group().reduceCount(),
+    countPerPred_thresh = pred_threshDim.group().reduceCount(),
+    countPerPRE = PREDim.group().reduceCount(),
+	countPerREC = RECDim.group().reduceCount(),
+	countPerACC = PREDim.group().reduceCount();
   
 function render_plots(){
     lossfuncRingChart
