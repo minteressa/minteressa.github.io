@@ -12,7 +12,7 @@ The features extracted from each tweet and used in the model are based on the AP
 - text:
 - retweet_count:
 - truncated:
-- ..
+- etc.
 
 To all that features we have added some new:
 
