@@ -6,6 +6,7 @@ categories: project
 published: true
 ---
 The features extracted from each tweet and used in the model are based on the API reference page about the Tweet objects (https://dev.twitter.com/overview/api/tweets), we’ve got the following attributes into each Tweet:
+
 - contributors: List of Contributor objects showing the users that are allowed to contribute into such account.
 - coordinates: 
 - text:
