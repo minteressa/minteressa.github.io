@@ -5,20 +5,32 @@ date: '2016-07-07 23:16:15 +0200'
 categories: project
 published: true
 ---
-Lorem ipsum
+The features extracted from each tweet and used in the model are based on the API reference page about the Tweet objects (https://dev.twitter.com/overview/api/tweets), we’ve got the following attributes into each Tweet:
+- contributors: List of Contributor objects showing the users that are allowed to contribute into such account.
+- coordinates: 
+- text:
+- retweet_count:
+- truncated:
+- ..
 
-### Lorem ipsum
+To all that features we have added some new:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec orci fringilla nisi elementum gravida. Nulla fringilla erat eget lorem venenatis gravida. Nulla facilisi. Etiam vel consequat eros. Ut luctus turpis id tempor porta. Mauris a turpis rhoncus, lobortis odio at, convallis quam. Integer rhoncus diam et erat consequat semper. Pellentesque imperdiet fringilla mauris id posuere. Quisque tincidunt sollicitudin erat at tempus. Praesent scelerisque, turpis ut cursus dictum, elit mauris tempor sapien, id ultrices justo est vitae nibh. Phasellus pellentesque fringilla lacinia. Nullam luctus, mi quis accumsan lacinia, ex neque convallis velit, nec sodales ipsum lorem ac turpis. Sed tincidunt tristique felis sed commodo. Ut sapien quam, accumsan sit amet nisi ut, efficitur aliquet nulla.
-
-### Integer eget arcu dolor
-
-Integer eget arcu dolor. Nullam eu erat in nibh commodo pretium at eu lectus. Phasellus porta elit a tellus consectetur aliquam. Nulla fermentum lobortis lacus at luctus. Phasellus ante est, congue vitae egestas ut, facilisis id dui. Sed nec ullamcorper nisi. Etiam mattis varius lectus eget cursus. Vestibulum cursus tincidunt augue id porttitor. Duis dignissim pulvinar congue.
-
-### Duis aliquet feugiat hendrerit
-
-Duis aliquet feugiat hendrerit. Proin scelerisque facilisis leo, sed finibus augue pellentesque a. Vestibulum consectetur augue nec rhoncus sagittis. In dignissim, turpis a viverra bibendum, urna ligula bibendum ex, eget posuere mi justo id nulla. Donec eu posuere justo, sed ullamcorper erat. Etiam lacinia nunc nec luctus luctus. Quisque at molestie urna, a ullamcorper tortor. Fusce ac tristique justo. Nulla sagittis lobortis ligula, sit amet imperdiet ante posuere dictum. Nam sodales quam at ipsum euismod iaculis. Vivamus justo libero, ultrices nec mi sit amet, tincidunt luctus nunc. Praesent vel dui tincidunt, sodales dui in, convallis nisi. Praesent molestie efficitur nisi, sit amet faucibus ante faucibus eget. Donec et sollicitudin sem.
-
-### Vivamus ultricies ac mauris at sollicitudin
-
-Vivamus ultricies ac mauris at sollicitudin. Etiam interdum malesuada fringilla. Mauris quis enim nec risus facilisis scelerisque non ut orci. Donec imperdiet mi ac metus rutrum, eu sollicitudin felis semper. Fusce tincidunt tristique dapibus. Suspendisse in quam mauris. Vestibulum malesuada efficitur leo, id imperdiet felis vehicula quis. Vestibulum posuere elementum justo, sed imperdiet leo fermentum quis.
+1. Only-text tweet: processed version of the original tweet (attribute text in the tweet model) that was been cleaned out of entities and stopwords.
+2. Only-hashtag: textualized version of the hashtags, concatenated with a space separation between them, and without the hash (#) sign.
+3. Only-text tweet vector: a vectorized version of nf_tweet_text. The variable will exist only as an object.
+4. Only-hashtag tweet vector: a vectorized version of nf_tweet_hashtags.  The variable will exist only as an object (the vectorized variables).
+5. Tweet vector: Vectorized representation of the words’ frequency into the documents (tweets), after removing hashtags, urls and mentions.
+6. Language: inferred tweet language based on its content by analyzing the text and evaluating the proximity against each language corpus. We’ll not take into account the language provided by the Tweet itself.
+7. # of Hashtags: amount of hashtags into the tweet.
+8. # of Mentions: amount of twitter accounts mentioned into the tweet.
+9. # of URLs: amount of twitter urls referenced into the tweet.
+10. Position of first entity into the tweet: relative position of the first entity (whether url, hashtag or mention) into the text of the tweet, counting from the end of the tweet. This way the sooner the mention, the bigger the value (first character = 1).
+11. Position of first hashtag/url/mention into the tweet: for each of the entity types that will be treated, we get the first appearance into the tweet.
+12. String length proportion of hashtags: number of characters used by hashtags / Total tweet characters
+13. String length proportion of mentions: number of characters used by mentions / Total tweet characters
+14: String length proportion of URLs: number of characters used by URLs / Total tweet characters
+15. Timestamp: the numeric timestamp (Unix Epoch) of the tweet, which should allow to perform calculations of distance between tweets in terms of seconds.
+16. Country: the country code, converted into one-hot encoding at some point of the feature generation.
+17. User (one-hot encoding): the internal identifier of the user, as a one-hot encoded feature.
+18. Retweet Count: how many retweets did this tweet receive. This value is suposed to be updated regularly as the retweets come after having gathered the original tweet.
+19. Nearduplicate Count:how many duplicates or near-duplicates have been detected.  Those are tweets whose content is (almost) the same as the original one, but they are not explicit retweets nor does include any explicit reference to the original tweet.
