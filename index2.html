@@ -60,15 +60,22 @@ d3.csv("gridsearch-nourls-isis.csv", function(error, experiments) {
 	
     lossfuncDim  = ndx.dimension(function(d) {return d.lossfunc;}),
     kernelDim  = ndx.dimension(function(d) {return d.kernel;}),
-	PREDim = ndx.dimension(function(d) {return d.PRE;}),
+	decayDim  = ndx.dimension(function(d) {return d.decay;}),
+    ngramDim  = ndx.dimension(function(d) {return d.ngram;}),
+    skipDim  = ndx.dimension(function(d) {return d.skip;}),
+    learning_rateDim  = ndx.dimension(function(d) {return d.learning_rate;}),
+    pred_threshDim  = ndx.dimension(function(d) {return d.pred_thresh;}),
+    PREDim = ndx.dimension(function(d) {return d.PRE;}),
 	ACCDim = ndx.dimension(function(d) {return d.ACC;}),
 	RECDim = ndx.dimension(function(d) {return d.REC;}),
+
 	countPerLoss = lossfuncDim.group().reduceCount(),
 	countPerKernel   = kernelDim.group().reduceCount();
-    //spendPerName = kernelDim.group().reduceSum(function(d) {return +d.PRE;}),
     countPerPRE    = PREDim.group().reduceCount(),
 	countPerREC    = RECDim.group().reduceCount(),
 	countPerACC    = PREDim.group().reduceCount();
+  decay	ngram	skip	learning_rate	pred_thresh
+
 	
 	
   
@@ -77,7 +84,7 @@ function render_plots(){
         .width(200).height(200)
         .dimension(lossfuncDim)
         .group(countPerLoss)
-        .innerRadius(50)
+        .innerRadius(0)
 		
 		;
 	
@@ -86,11 +93,56 @@ function render_plots(){
         .width(200).height(200)
         .dimension(kernelDim)
         .group(countPerKernel)
-        .innerRadius(50)
+        .innerRadius(0)
 		
 		;	
 
-	
+  
+    decayRingChart	
+        .width(200).height(200)
+        .dimension(decaylDim)
+        .group(countPerDekay)
+        .innerRadius(0)
+		
+		;	
+
+  
+	ngramRingChart	
+        .width(200).height(200)
+        .dimension(ngramDim)
+        .group(countPerNgram)
+        .innerRadius(0)
+		
+		;	
+
+  
+	skipRingChart	
+        .width(200).height(200)
+        .dimension(skipDim)
+        .group(countPerSkip)
+        .innerRadius(0)
+		
+		;	
+
+  
+	learning_rateRingChart	
+        .width(200).height(200)
+        .dimension(learning_rateDim)
+        .group(countPerKernel)
+        .innerRadius(0)
+		
+		;	
+
+  
+	pred_threshRingChart
+        .width(200).height(200)
+        .dimension(pred_threshDim)
+        .group(countPerpred_thresh)
+        .innerRadius(0)
+		
+		;	
+
+  
     PRERowChart
         .width(250)
 		.height(200)
