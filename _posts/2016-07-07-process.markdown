@@ -8,8 +8,8 @@ published: true
 The process that the data follows is the one shown in the diagram:
 
 1. The tweets are collected and added to a Kafka queue.
-2. The queued tweets are filtered excluding the ones that don't include an URL. The tweets with an URL are added to the "url filter" Kafka queue.
-3. From the "url filter" queue, the tweets are filtered by language and then separated in two groups: tweets in Spanish and tweets in English, added to different Kafka queues for each language.
+2. The queued tweets are filtered excluding the ones that don't include an URL. The tweets with an URL are added to the url_filter Kafka queue.
+3. From the url_filter queue, the tweets are filtered by language and then separated in two groups: tweets in Spanish and tweets in English, added to different Kafka queues for each language (lang_filter_ES and lang_filter_EN).
 4. Each group are filtered again in order to exclude their duplicates and near duplicates and the added to a new Kafka queue.
 5. From that last queue, the features of each tweet are extracted, saving them into a JSON file:
 	* Features from the tweets.
