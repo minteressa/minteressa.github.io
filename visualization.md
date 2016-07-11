@@ -41,7 +41,7 @@ published: true
 		<div id="chart-ACC"></div>
 	</div>
   	<div class="col-xs-4">
-		<h3>PRF</h3>
+		<h3>F-measure</h3>
 		<div id="chart-PRF"></div>
 	</div>
   	<div class="col-xs-4">
@@ -215,7 +215,7 @@ function render_plots(){
 		.x(d3.scale.linear().domain([0, PRFCols]))
         .group(countPerPRF)
 		.renderTitle(true)
-		.title("PRF");
+		.title("F-measure");
 
     ROCRowChart
         .width(250)
