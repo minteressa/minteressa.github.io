@@ -29,7 +29,7 @@ To all that features we have added some new:
 11. Position of first hashtag/url/mention into the tweet: for each of the entity types that will be treated, we get the first appearance into the tweet.
 12. String length proportion of hashtags: number of characters used by hashtags / total tweet characters
 13. String length proportion of mentions: number of characters used by mentions / total tweet characters
-14: String length proportion of URLs: number of characters used by URLs / total tweet characters
+14. String length proportion of URLs: number of characters used by URLs / total tweet characters
 15. Timestamp: the numeric timestamp (Unix Epoch) of the tweet, which should allow to perform calculations of distance between tweets in terms of seconds.
 16. Country: the country code, converted into one-hot encoding at some point of the feature generation.
 17. User (one-hot encoding): the internal identifier of the user, as a one-hot encoded feature.
