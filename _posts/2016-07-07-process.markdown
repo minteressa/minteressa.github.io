@@ -12,9 +12,10 @@ The process that the data follows is the one shown in the diagram:
 3. Lang Filter: the tweets are filtered by language and then separated in two groups: tweets in Spanish and tweets in English (lang_filter_ES and lang_filter_EN).
 4. Near Duplicates filter: each group are filtered again in order to exclude their duplicates and near duplicates.
 5. Features Exractor: the features of each tweet are extracted, saving them into a JSON file:
-	* Features from the tweets.
-	* Scrapper: Features from their URLs.
+	* features from the tweets.
+	* Scrapper: features from their URLs.
 6. Model: the features are processed by the training model.
-7. Front End:
+	* User model: done with the data of the tweets labeled by the user.
+7. Front End: the tweets are shown to the user that label them. The data generatedhat data is stored in order to use it in the User model.
 
 <img class="img-responsive pull-right" width="80%" src="/assets/images/process.png" alt="{{ post.title }}"/>
