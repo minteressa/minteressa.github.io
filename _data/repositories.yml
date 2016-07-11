@@ -14,6 +14,6 @@ repository:
   - title: "Extract, transform, load and filter"
     url: "https://github.com/malberich/pgds-etl-filters"
     user: "malberich"
-  - title: "URL scrapping"
+  - title: "URL scraping"
     url: "https://github.com/jortilles/minteressa_datascience"
     user: "jortilles"
