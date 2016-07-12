@@ -5,7 +5,7 @@ date: '2016-07-12 21:16:15 +0200'
 categories: project
 published: true
 ---
-M'interessa project is, in fact, an information retrieval solution, a binary classification. So, information retrieval metrics must be used in order to assess the model of the project.
+M'interessa project is, in fact, an information retrieval solution, a binary classification product. So, information retrieval metrics must be used in order to assess the model of the project.
 
 If the different document groups generated after a binary classification process are...
 
@@ -33,7 +33,7 @@ _Recall = tp / (tp + fn)_
 
 ### Accuracy
 
-Accuracy is the proportion of true results among the total of documents. It takes a value between 0 and 1.
+Accuracy is the proportion of true results (positive or negative) among the total of documents. It takes a value between 0 and 1.
 
 _Accuracy = (tp + tn) / (tp + tn + fp + fn)_
 
