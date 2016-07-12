@@ -7,7 +7,7 @@ published: true
 ---
 M'interessa project is, in fact, an information retrieval solution. So, information retrieval metrics must be used in order to assess the model of the project.
 
-If the different document groups generated after an infromation retrieval process are...
+If the different document groups generated after an information retrieval process are...
 
 _tp_ = true positive, relevant documents that are retrieved
 
@@ -17,7 +17,7 @@ _fp_ = false positives, not relevant documents that are retrieved
 
 _fn_ = false negatives, relevant documents that are not retrived
 
-...the definitions of the the several information retrieval indicators to assess that process are as follows:
+...the definitions of the the several information retrieval indicators used to assess that process are as follows:
 
 ### Precision
 
