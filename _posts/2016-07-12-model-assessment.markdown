@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Model assessment"
-date:   2016-07-12 21:16:15 +0200
+title: Model assessment
+date: '2016-07-12 21:16:15 +0200'
 categories: project
+published: true
 ---
-Lorem ipsum
+M'interessa project is, in fact, an information retrieval solution. So information retrieval metrics must be used in order to assess the model used in the project.
 
 ### Lorem ipsum
 
@@ -21,4 +22,3 @@ Duis aliquet feugiat hendrerit. Proin scelerisque facilisis leo, sed finibus aug
 ### Vivamus ultricies ac mauris at sollicitudin
 
 Vivamus ultricies ac mauris at sollicitudin. Etiam interdum malesuada fringilla. Mauris quis enim nec risus facilisis scelerisque non ut orci. Donec imperdiet mi ac metus rutrum, eu sollicitudin felis semper. Fusce tincidunt tristique dapibus. Suspendisse in quam mauris. Vestibulum malesuada efficitur leo, id imperdiet felis vehicula quis. Vestibulum posuere elementum justo, sed imperdiet leo fermentum quis.
-
