@@ -35,9 +35,9 @@ _Accuracy = (tp + tn) / (tp + tn + fp + fn)_
 
 This measure is a combination between Precision and Recall, an harmonic mean between both metrics.
 
-_F = 2 x ((Precision x Recall) / (Precision + Recall))
+_F = 2 x ((Precision x Recall) / (Precision + Recall))_
 
-F = 2tp / (2tp + fp + fn)_
+_F = 2tp / (2tp + fp + fn)_
 
 ### ROC
 
