@@ -7,6 +7,8 @@ published: true
 ---
 M'interessa project is, in fact, an information retrieval solution. So, information retrieval metrics must be used in order to assess the model of the project.
 
+If the different document groups generated after an infromation retrieval process are...
+
 _tp_ = true positive, relevant documents that are retrieved
 
 _tn_ = true negatives, not relevant documents that are not retrived
@@ -15,15 +17,17 @@ _fp_ = false positives, not relevant documents that are retrieved
 
 _fn_ = false negatives, relevant documents that are not retrived
 
+...the definitions of the the several information retrieval indicators to assess that process are as follows:
+
 ### Precision
 
-Precision is the fraction of retrieved documents that are relevant.
+Precision is the fraction of retrieved documents that are relevant. It takes a value between 0 and 1.
 
 _Precision = tp / (tp + fp)_
 
 ### Recall
 
-Recall is the fraction of relevant documents retrieved from the total amount of relevant documents.
+Recall is the fraction of relevant documents retrieved from the total amount of relevant documents. It takes a value between 0 and 1.
 
 _Recall = tp / (tp + fn)_
 
