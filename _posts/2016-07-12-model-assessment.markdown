@@ -9,7 +9,7 @@ M'interessa project is, in fact, an information retrieval solution. So informati
 
 ### Precision
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec orci fringilla nisi elementum gravida. Nulla fringilla erat eget lorem venenatis gravida. Nulla facilisi. Etiam vel consequat eros. Ut luctus turpis id tempor porta. Mauris a turpis rhoncus, lobortis odio at, convallis quam. Integer rhoncus diam et erat consequat semper. Pellentesque imperdiet fringilla mauris id posuere. Quisque tincidunt sollicitudin erat at tempus. Praesent scelerisque, turpis ut cursus dictum, elit mauris tempor sapien, id ultrices justo est vitae nibh. Phasellus pellentesque fringilla lacinia. Nullam luctus, mi quis accumsan lacinia, ex neque convallis velit, nec sodales ipsum lorem ac turpis. Sed tincidunt tristique felis sed commodo. Ut sapien quam, accumsan sit amet nisi ut, efficitur aliquet nulla.
+Precision is a metric
 
 ### Recall
 
@@ -21,7 +21,7 @@ Duis aliquet feugiat hendrerit. Proin scelerisque facilisis leo, sed finibus aug
 
 ### F-measure (or F1 score)
 
-Vivamus ultricies ac mauris at sollicitudin. Etiam interdum malesuada fringilla. Mauris quis enim nec risus facilisis scelerisque non ut orci. Donec imperdiet mi ac metus rutrum, eu sollicitudin felis semper. Fusce tincidunt tristique dapibus. Suspendisse in quam mauris. Vestibulum malesuada efficitur leo, id imperdiet felis vehicula quis. Vestibulum posuere elementum justo, sed imperdiet leo fermentum quis.
+This measure is a combination between Precision and Recall, an harmonic mean between both metrics.
 
 ### ROC
 
