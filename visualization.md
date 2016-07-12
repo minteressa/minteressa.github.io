@@ -5,25 +5,58 @@ title: Visualization
 permalink: visualization.html
 published: true
 ---
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>dc.js - m'interessa</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="//dc-js.github.io/dc.js/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="//dc-js.github.io/dc.js/css/dc.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/ds/dc.css"/>
   </head>
   <body>
 
 <div class="container">
-<!--script type="text/javascript" src="//dc-js.github.io/dc.js/examples/header.js"></script-->
+<!--script type="text/javascript" src="http://dc-js.github.io/dc.js/examples/header.js"></script-->
 <div class="row">
-	<div id="chart-ring-lossfunc"></div>
-	<div id="chart-ring-kernel"></div>
-  	<div id="chart-ring-decay"></div>
-  	<div id="chart-ring-ngram"></div>
-  	<div id="chart-ring-skip"></div>
-  	<div id="chart-ring-learning_rate"></div>
-  	<div id="chart-ring-pred_thresh"></div>
+
+    <div class="col-xs-3">
+		<h3>Loss Function</h3>
+       <div id="chart-ring-lossfunc" class="col-xs-3"></div>
+    </div>
+
+    <div class="col-xs-3">
+		<h3>Kernel</h3>
+        <div id="chart-ring-kernel" class="col-xs-3"></div>
+    </div>
+
+    <div class="col-xs-3">
+        <h3>Decay</h3>
+        <div id="chart-ring-decay"></div>
+    </div>
+	
+    <div class="col-xs-3">
+        <h3>Ngram</h3>
+        <div id="chart-ring-ngram"></div>
+    </div>
+
+</div>
+
+<div class="row">   
+    <div class="col-xs-4">
+     <h3>Skip</h3>
+    <div id="chart-ring-skip"></div>
+    </div>    
+  
+     <div class="col-xs-4">
+        <h3>Learning Rate</h3>
+    <div id="chart-ring-learning_rate"></div>
+    </div>     	
+  	
+    <div class="col-xs-4">
+        <h3>Pred Threshold</h3>
+    <div id="chart-ring-pred_thresh"></div>
+    </div>   	
+  	
 </div>
 
 <div class="row">
@@ -48,10 +81,12 @@ published: true
 		<div id="chart-ROC"></div>
 	</div>
 </div>
+
+</div>
 	
-    <script type="text/javascript" src="dc-js.github.io/dc.js/js/d3.js"></script>
-    <script type="text/javascript" src="dc-js.github.io/dc.js/js/crossfilter.js"></script>
-    <script type="text/javascript" src="dc-js.github.io/dc.js/js/dc.js"></script>
+    <script type="text/javascript" src="assets/ds/d3.js"></script>
+    <script type="text/javascript" src="assets/ds/crossfilter.js"></script>
+    <script type="text/javascript" src="assets/ds/dc.js"></script>
     <script type="text/javascript">
 
 	
@@ -116,7 +151,7 @@ d3.csv("gridsearch-nourls-isis.csv", function(error, experiments) {
   
 function render_plots(){
     lossfuncRingChart
-        .width(200).height(200)
+        .width(150).height(150)
         .dimension(lossfuncDim)
         .group(countPerLoss)
         .innerRadius(0)
@@ -124,8 +159,8 @@ function render_plots(){
 		;
 	
 
-	kernekRingChart	
-        .width(200).height(200)
+	kernelRingChart	
+        .width(150).height(150)
         .dimension(kernelDim)
         .group(countPerKernel)
         .innerRadius(0)
@@ -134,16 +169,16 @@ function render_plots(){
 
   
     decayRingChart	
-        .width(200).height(200)
-        .dimension(decaylDim)
-        .group(countPerDekay)
+        .width(150).height(150)
+        .dimension(decayDim)
+        .group(countPerDecay)
         .innerRadius(0)
 		
 		;	
 
   
 	ngramRingChart	
-        .width(200).height(200)
+        .width(150).height(150)
         .dimension(ngramDim)
         .group(countPerNgram)
         .innerRadius(0)
@@ -152,7 +187,7 @@ function render_plots(){
 
   
 	skipRingChart	
-        .width(200).height(200)
+        .width(150).height(150)
         .dimension(skipDim)
         .group(countPerSkip)
         .innerRadius(0)
@@ -161,7 +196,7 @@ function render_plots(){
 
   
 	learning_rateRingChart	
-        .width(200).height(200)
+        .width(150).height(150)
         .dimension(learning_rateDim)
         .group(countPerKernel)
         .innerRadius(0)
@@ -170,9 +205,9 @@ function render_plots(){
 
   
 	pred_threshRingChart
-        .width(200).height(200)
+        .width(150).height(150)
         .dimension(pred_threshDim)
-        .group(countPerpred_thresh)
+        .group(countPerPred_thresh)
         .innerRadius(0)
 		
 		;	
@@ -230,6 +265,9 @@ function render_plots(){
 render_plots();
 
 });
+
+
+
 
     </script>
 
