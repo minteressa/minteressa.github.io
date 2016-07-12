@@ -5,7 +5,7 @@ date: '2016-07-12 21:16:15 +0200'
 categories: project
 published: true
 ---
-M'interessa project is, in fact, an information retrieval solution. So information retrieval metrics must be used in order to assess the model used in the project.
+M'interessa project is, in fact, an information retrieval solution. So, information retrieval metrics must be used in order to assess the model of the project.
 
 tp = true positive, relevant documents that are retrieved
 tn = true negatives, not relevant documents that are not retrived
