@@ -5,7 +5,6 @@ title: Visualization
 permalink: visualization.html
 published: true
 ---
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>dc.js - m'interessa</title>
