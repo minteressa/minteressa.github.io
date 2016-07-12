@@ -47,7 +47,7 @@ _F = 2tp / (2tp + fp + fn)_
 
 ### ROC (Receiver Operating Characteristic)
 
-ROC is te plotting of the Recall and Inverse Recall curves. It takes a value between 0 and 1.
+ROC is te plotting of the Recall vs Inverse Recall curve. The area under the curve is the value of this indicator, between 0 and 1.
 
 ### M'interessa model
 
