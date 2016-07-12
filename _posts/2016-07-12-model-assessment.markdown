@@ -55,7 +55,7 @@ As you can see in the [Visualization tab](https://minteressa.github.io/visualiza
 
 In the model used in the project we have set F1-score as main metric, but prioritizing Precision over Recall. So the best results are obtained with the combination of a Logistic Loss Function and the algorith of Stochastic Gradient Descent, set by default on Vowpal.
 
-##### References:
+#### References:
 
 1. Precision and recall. _Wikipedia, the free encyclopedia_. <[https://en.wikipedia.org/wiki/Precision_and_recall](https://en.wikipedia.org/wiki/Precision_and_recall)>. [Retrieved on 12th July 2016].
 2. Receiver operating characteristic. _Wikipedia, the free encyclopedia_. <[https://en.wikipedia.org/wiki/Receiver_operating_characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)>. [Retrieved on 12th July 2016].
