@@ -7,22 +7,38 @@ published: true
 ---
 M'interessa project is, in fact, an information retrieval solution. So information retrieval metrics must be used in order to assess the model used in the project.
 
+tp = true positive, relevant documents that are retrieved
+tn = true negatives, not relevant documents that are not retrived
+fp = false positives, not relevant documents that are retrieved
+fn = false negatives, relevant documents that are not retrived
+
 ### Precision
 
-Precision is a metric
+Precision is the fraction of retrieved documents that are relevant.
+
+Precision = tp / (tp + fp)
 
 ### Recall
 
-Integer eget arcu dolor. Nullam eu erat in nibh commodo pretium at eu lectus. Phasellus porta elit a tellus consectetur aliquam. Nulla fermentum lobortis lacus at luctus. Phasellus ante est, congue vitae egestas ut, facilisis id dui. Sed nec ullamcorper nisi. Etiam mattis varius lectus eget cursus. Vestibulum cursus tincidunt augue id porttitor. Duis dignissim pulvinar congue.
+Recall is the fraction of relevant documents retrieved from the total amount of relevant documents.
+
+Recall = tp / (tp + fn)
 
 ### Accuracy
 
-Duis aliquet feugiat hendrerit. Proin scelerisque facilisis leo, sed finibus augue pellentesque a. Vestibulum consectetur augue nec rhoncus sagittis. In dignissim, turpis a viverra bibendum, urna ligula bibendum ex, eget posuere mi justo id nulla. Donec eu posuere justo, sed ullamcorper erat. Etiam lacinia nunc nec luctus luctus. Quisque at molestie urna, a ullamcorper tortor. Fusce ac tristique justo. Nulla sagittis lobortis ligula, sit amet imperdiet ante posuere dictum. Nam sodales quam at ipsum euismod iaculis. Vivamus justo libero, ultrices nec mi sit amet, tincidunt luctus nunc. Praesent vel dui tincidunt, sodales dui in, convallis nisi. Praesent molestie efficitur nisi, sit amet faucibus ante faucibus eget. Donec et sollicitudin sem.
+Accuracy = (tp + tn) / (tp + tn + fp + fn)
 
 ### F-measure (or F1 score)
 
 This measure is a combination between Precision and Recall, an harmonic mean between both metrics.
 
+F = 2 x ((Precision x Recall)/(Precision + Recall)) = 2tp / (2tp + fp + fn)
+
 ### ROC
 
-Vivamus ultricies ac mauris at sollicitudin. Etiam interdum malesuada fringilla. Mauris quis enim nec risus facilisis scelerisque non ut orci. Donec imperdiet mi ac metus rutrum, eu sollicitudin felis semper. Fusce tincidunt tristique dapibus. Suspendisse in quam mauris. Vestibulum malesuada efficitur leo, id imperdiet felis vehicula quis. Vestibulum posuere elementum justo, sed imperdiet leo fermentum quis.
+Also knonw as Receiver Operating Characteristic
+
+References:
+
+1. Precision and recall. 'Wikipedia, the free encyclopedia'. <[https://en.wikipedia.org/wiki/Precision_and_recall](https://en.wikipedia.org/wiki/Precision_and_recall)>. [Retrieved on 12th July 2016].
+2. Receiver operating characteristic. 'Wikipedia, the free encyclopedia'. <[https://en.wikipedia.org/wiki/Receiver_operating_characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)>. [Retrieved on 12th July 2016].
