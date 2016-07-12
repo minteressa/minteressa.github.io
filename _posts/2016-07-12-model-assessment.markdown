@@ -8,8 +8,11 @@ published: true
 M'interessa project is, in fact, an information retrieval solution. So, information retrieval metrics must be used in order to assess the model of the project.
 
 tp = true positive, relevant documents that are retrieved
+
 tn = true negatives, not relevant documents that are not retrived
+
 fp = false positives, not relevant documents that are retrieved
+
 fn = false negatives, relevant documents that are not retrived
 
 ### Precision
