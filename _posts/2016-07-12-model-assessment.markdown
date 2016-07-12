@@ -7,35 +7,37 @@ published: true
 ---
 M'interessa project is, in fact, an information retrieval solution. So, information retrieval metrics must be used in order to assess the model of the project.
 
-tp = true positive, relevant documents that are retrieved
+_tp_ = true positive, relevant documents that are retrieved
 
-tn = true negatives, not relevant documents that are not retrived
+_tn_ = true negatives, not relevant documents that are not retrived
 
-fp = false positives, not relevant documents that are retrieved
+_fp_ = false positives, not relevant documents that are retrieved
 
-fn = false negatives, relevant documents that are not retrived
+_fn_ = false negatives, relevant documents that are not retrived
 
 ### Precision
 
 Precision is the fraction of retrieved documents that are relevant.
 
-Precision = tp / (tp + fp)
+_Precision = tp / (tp + fp)_
 
 ### Recall
 
 Recall is the fraction of relevant documents retrieved from the total amount of relevant documents.
 
-Recall = tp / (tp + fn)
+_Recall = tp / (tp + fn)_
 
 ### Accuracy
 
-Accuracy = (tp + tn) / (tp + tn + fp + fn)
+_Accuracy = (tp + tn) / (tp + tn + fp + fn)_
 
 ### F-measure (or F1 score)
 
 This measure is a combination between Precision and Recall, an harmonic mean between both metrics.
 
-F = 2 x ((Precision x Recall) / (Precision + Recall)) = 2tp / (2tp + fp + fn)
+_F = 2 x ((Precision x Recall) / (Precision + Recall))
+
+F = 2tp / (2tp + fp + fn)_
 
 ### ROC
 
