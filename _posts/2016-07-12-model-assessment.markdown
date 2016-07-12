@@ -41,7 +41,7 @@ F = 2 x ((Precision x Recall) / (Precision + Recall)) = 2tp / (2tp + fp + fn)
 
 Also knonw as Receiver Operating Characteristic
 
-References:
+### References:
 
-1. Precision and recall. 'Wikipedia, the free encyclopedia'. <[https://en.wikipedia.org/wiki/Precision_and_recall](https://en.wikipedia.org/wiki/Precision_and_recall)>. [Retrieved on 12th July 2016].
-2. Receiver operating characteristic. 'Wikipedia, the free encyclopedia'. <[https://en.wikipedia.org/wiki/Receiver_operating_characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)>. [Retrieved on 12th July 2016].
+1. Precision and recall. _Wikipedia, the free encyclopedia_. <[https://en.wikipedia.org/wiki/Precision_and_recall](https://en.wikipedia.org/wiki/Precision_and_recall)>. [Retrieved on 12th July 2016].
+2. Receiver operating characteristic. _Wikipedia, the free encyclopedia_. <[https://en.wikipedia.org/wiki/Receiver_operating_characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)>. [Retrieved on 12th July 2016].
