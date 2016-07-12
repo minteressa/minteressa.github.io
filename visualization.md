@@ -14,8 +14,8 @@ published: true
   </head>
   <body>
 
-<div class="container">
-<!--script type="text/javascript" src="http://dc-js.github.io/dc.js/examples/header.js"></script-->
+<div class="container-fluid">
+
 <div class="row">
 
     <div class="col-xs-3">
@@ -24,7 +24,7 @@ published: true
     </div>
 
     <div class="col-xs-3">
-		<h3>Kernel</h3>
+		<h3>Algorithm</h3>
         <div id="chart-ring-kernel" class="col-xs-3"></div>
     </div>
 
@@ -71,11 +71,14 @@ published: true
 		<h3>Accuracy</h3>
 		<div id="chart-ACC"></div>
 	</div>
-  	<div class="col-xs-4">
+</div>
+
+<div class="row">
+  	<div class="col-xs-6">
 		<h3>F-measure</h3>
 		<div id="chart-PRF"></div>
 	</div>
-  	<div class="col-xs-4">
+  	<div class="col-xs-6">
 		<h3>ROC</h3>
 		<div id="chart-ROC"></div>
 	</div>
@@ -101,11 +104,11 @@ var lossfuncRingChart = dc.pieChart("#chart-ring-lossfunc"),
 	ACCRowChart = dc.lineChart("#chart-ACC"),
 	PRFRowChart = dc.lineChart("#chart-PRF"),
 	ROCRowChart = dc.lineChart("#chart-ROC")
-	PRECols = 100,
-	ACCCols = 100,
-	RECCols = 100,
-    PRFCols = 100,
-	ROCCols = 100;
+	PRECols = 10,
+	ACCCols = 10,
+	RECCols = 10,
+    PRFCols = 10,
+	ROCCols = 10;
 	
 
 d3.csv("gridsearch-nourls-isis.csv", function(error, experiments) {
@@ -213,7 +216,7 @@ function render_plots(){
 
 
     ACCRowChart
-        .width(250)
+        .width(400)
 		.height(200)
 		.renderArea(true)
         .dimension(ACCDim)
@@ -222,7 +225,7 @@ function render_plots(){
 		.title("Accuracy");
   
     PRERowChart
-        .width(250)
+        .width(350)
 		.height(200)
 		.renderArea(true)
         .dimension(RECDim)
@@ -232,7 +235,7 @@ function render_plots(){
 		.title("Precision");
 
     RECRowChart
-        .width(250)
+        .width(350)
 		.height(200)
 		.renderArea(true)
         .dimension(RECDim)
@@ -241,7 +244,7 @@ function render_plots(){
 		.title("Recall");
 			
     PRFRowChart
-        .width(250)
+        .width(400)
 		.height(200)
 		.renderArea(true)
         .dimension(PRFDim)
@@ -251,7 +254,7 @@ function render_plots(){
 		.title("F-measure");
 
     ROCRowChart
-        .width(250)
+        .width(400)
 		.height(200)
 		.renderArea(true)
         .dimension(ROCDim)
@@ -270,6 +273,6 @@ render_plots();
 
     </script>
 
-</div>
+
   </body>
 </html>
