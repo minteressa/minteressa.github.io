@@ -7,7 +7,7 @@ published: true
 ---
 M'interessa project is, in fact, an information retrieval solution, a binary classification. So, information retrieval metrics must be used in order to assess the model of the project.
 
-If the different document groups generated after an information retrieval process are...
+If the different document groups generated after a binary classification process are...
 
 _tp_ = true positive, relevant documents that are retrieved
 
@@ -48,6 +48,12 @@ _F = 2tp / (2tp + fp + fn)_
 ### ROC (Receiver Operating Characteristic)
 
 It takes a value between 0 and 1.
+
+### M'interessa model
+
+As you can see in the [Visualization tab](https://minteressa.github.io/visualization.html) of this project website, the parameters of the M'interessa model are directly related with all this assessment metrics.
+
+In the model used in the project we have set F1-score as main metric, but prioritizing Precision over Recall. So the best resuls are obtained with the combination of a Logistic Loss Function and the algorith of Stochastic Gradient Descent set by default on Vowpal.
 
 ### References:
 
