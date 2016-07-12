@@ -39,9 +39,9 @@ _F = 2 x ((Precision x Recall) / (Precision + Recall))_
 
 _F = 2tp / (2tp + fp + fn)_
 
-### ROC
+### ROC (Receiver Operating Characteristic)
 
-Also knonw as Receiver Operating Characteristic
+Loren ipsum
 
 ### References:
 
