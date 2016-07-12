@@ -9,13 +9,13 @@ published: true
   <head>
     <title>dc.js - m'interessa</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="http://dc-js.github.io/dc.js/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="http://dc-js.github.io/dc.js/css/dc.css"/>
+    <link rel="stylesheet" type="text/css" href="//dc-js.github.io/dc.js/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//dc-js.github.io/dc.js/css/dc.css"/>
   </head>
   <body>
 
 <div class="container">
-<!--script type="text/javascript" src="http://dc-js.github.io/dc.js/examples/header.js"></script-->
+<!--script type="text/javascript" src="//dc-js.github.io/dc.js/examples/header.js"></script-->
 <div class="row">
 	<div id="chart-ring-lossfunc"></div>
 	<div id="chart-ring-kernel"></div>
@@ -49,9 +49,9 @@ published: true
 	</div>
 </div>
 	
-    <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/d3.js"></script>
-    <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/crossfilter.js"></script>
-    <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/dc.js"></script>
+    <script type="text/javascript" src="dc-js.github.io/dc.js/js/d3.js"></script>
+    <script type="text/javascript" src="dc-js.github.io/dc.js/js/crossfilter.js"></script>
+    <script type="text/javascript" src="dc-js.github.io/dc.js/js/dc.js"></script>
     <script type="text/javascript">
 
 	
