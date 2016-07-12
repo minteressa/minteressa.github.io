@@ -200,7 +200,7 @@ function render_plots(){
 	learning_rateRingChart	
         .width(150).height(150)
         .dimension(learning_rateDim)
-        .group(countPerKernel)
+        .group(countPerLearning_rate)
         .innerRadius(0)
 		
 		;	
