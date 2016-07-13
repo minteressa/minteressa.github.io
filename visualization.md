@@ -113,11 +113,11 @@ var lossfuncRingChart = dc.pieChart("#chart-ring-lossfunc"),
 
 d3.csv("gridsearch-nourls-isis.csv", function(error, experiments) {
   experiments.forEach(function(x) {
-    x.PRE = Math.floor( parseFloat( x.PRE ) * PRECols );
-	x.ACC = Math.floor( parseFloat( x.ACC ) * ACCCols );
-	x.REC = Math.floor( parseFloat( x.REC ) * RECCols );
-    x.PRF = Math.floor( parseFloat( x.PRF ) * PRFCols );
-	x.ROC = Math.floor( parseFloat( x.ROC ) * ROCCols );
+    x.PRE = Math.floor( parseFloat( x.PRE ) * PRECols * 10 ) / 10;
+	x.ACC = Math.floor( parseFloat( x.ACC ) * ACCCols * 10 ) / 10;
+	x.REC = Math.floor( parseFloat( x.REC ) * RECCols * 10 ) / 10;
+    x.PRF = Math.floor( parseFloat( x.PRF ) * PRFCols * 10 ) / 10;
+	x.ROC = Math.floor( parseFloat( x.ROC ) * ROCCols * 10 ) / 10;
   });
   // lossDimension = return map[d.lossfunc]
   
