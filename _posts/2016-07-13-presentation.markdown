@@ -5,7 +5,7 @@ date: '2016-07-13 21:16:15 +0200'
 categories: project
 published: true
 ---
-## Presentation of M'interesa project
+## Presentation of M'interessa project
 
 Barcelona, on the 13th of July of 2016.
 
