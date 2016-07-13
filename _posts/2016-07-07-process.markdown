@@ -13,7 +13,7 @@ The process that the data follows is the one shown in the diagram:
 4. Near Duplicates filter: each group are filtered again in order to exclude their duplicates and near duplicates.
 5. Features Exractor: the features of each tweet are extracted, saving them into a JSON file:
 	* features from the tweets.
-	* Scrapper: features from their URLs.
+	* Scraper: features from their URLs.
 6. Model: the features are processed by the training model.
 	* User model: done with the data of the tweets labeled by the user.
 7. Front End: the tweets are shown to the user that label them. The data is stored in order to use it in the User model.
