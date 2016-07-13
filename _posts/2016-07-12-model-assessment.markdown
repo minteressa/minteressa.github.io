@@ -53,7 +53,7 @@ ROC is te plotting of the Recall vs Inverse Recall curve. The area under the cur
 
 As you can see in the [Visualization tab](https://minteressa.github.io/visualization.html) of this project website, the parameters of the M'interessa model are directly related with all this assessment metrics. That dashboard has been generated from the data obtained from a grid search in order to see what is the best combination of parameters for the M'interessa model.
 
-In the model used in the project we have set F1-score as main metric, but prioritizing Precision over Recall. So the best results are obtained with the combination of a Logistic Loss Function and the algorithm of Stochastic Gradient Descent, set by default on Vowpal.
+In the model used in the project we have set F1-score as main metric, but prioritizing Precision over Recall. So the best results are obtained with the combination of a Squared Loss Function, the algorithm of Neural Networkr with one layer and a Prediction Threshold of 0.75.
 
 #### References:
 
